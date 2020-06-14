@@ -1,0 +1,13 @@
+## In this file keep ALL the (succesful) commands used for the project.
+
+#concaténation :
+./concat.sh
+
+
+# Quality control:
+./preprocessing.sh
+
+
+# Alignement:
+./Traitement.sh
+
