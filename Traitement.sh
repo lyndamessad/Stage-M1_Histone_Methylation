@@ -75,10 +75,6 @@ bamCoverage -b results/sorted_bam/Input_NT_S6.sorted.bam -o results/BigWig/Input
 bamCoverage -b results/sorted_bam/K4me3_KO_control_S8.sorted.bam -o results/BigWig/K4me3_KO_control_S8.bw  -of bigwig -p 4 -bs 1000 --minMappingQuality 20 &&
 bamCoverage -b results/sorted_bam/K4me3_NT_S9.sorted.bam  -o results/BigWig/K4me3_NT_S9.bw   -of bigwig  -p 4 -bs 1000 --minMappingQuality 20
 
-# Peakcalling with control ; Macs2:
-macs2 callpeak -t results/bam/K4me3_KO_S7.bam -c results/bam/Input_KO_S4.bam --format=BAM --name=K4me3_KO_S7_control --gsize=hs --outdir results/callpeak &&
-macs2 callpeak -t results/bam/K4me3_KO_control_S8.bam -c results/bam/Input_KO_control_S5.bam --format=BAM --name=K4me3_KO_control_S8_control --gsize=hs --outdir results/callpeak &&
-macs2 callpeak -t results/bam/K4me3_NT_S9.bam -c results/bam/Input_NT_S6.bam --format=BAM --name=K4me3_NT_S9_control --gsize=hs --outdir results/callpeak &&
 
 # Peakcalling with control on Macs2, for narrowpeaks: H3K4me3
 macs2 callpeak -t results/bam/K4me3_KO_S7.bam -c results/bam/Input_KO_S4.bam --format=BAMPE --name=K4me3_KO_S7_control --gsize=hs --outdir results/narrowpeak &&
